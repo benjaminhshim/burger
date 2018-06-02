@@ -1,0 +1,35 @@
+body {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+
+input {
+    width: 500px;
+    margin-top: 20px;
+    text-align: center;
+    height: 40px;
+}
+
+input:focus {
+    outline: none;
+    letter-spacing: 2px;
+    color: gray;
+}
+
+button {
+    background-color: rgb(122, 213, 255);
+    color: white;
+    border: none;
+    letter-spacing: 2px;
+}
+
+#burger-title {
+    letter-spacing: 4px;
+}
