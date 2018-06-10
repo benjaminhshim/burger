@@ -1,13 +1,36 @@
 <header>
-    <div class="tc-l mt4 mt5-m mt6-l ph3">
+    <div class="tc-l mt4 mt5-m mt5-l ph3">
         <h1 class="f2 f1-l fw2 -90 mb0 lh-title" id="burger-title">BURGER</h1>
     </div>
 
     <img src="/assets/img/burger.png">
 </header>
 
-<div class="container">
-    
+<div class="container menu">
+  
+    <div class="col-5" id="ready">
+      <h4>READY TO EAT</h4>
+          {{#each burgers}}
+            {{#unless devoured}}
+              <div class="uneaten-burger" data-value='0'>
+                  <span>{{burger_name}}</span>
+                  {{> buttons/devour-button}}
+              </div>
+            {{/unless}}
+          {{/each}}
+    </div>
+
+  <div class="col-2"></div>
+      
+    <div class="col-5" id="devoured">
+      <h4>DEVOURED</h4>
+          {{#each burgers}}
+            {{#if devoured}}
+              <div class="uneaten-burger" data-value='0'>
+                  <span>{{burger_name}}</span>
+              </div>
+            {{/if}}
+          {{/each}}    </div>
 </div>
 
 <form class="create-form">
@@ -17,5 +40,5 @@
     <input type="text" id="burger" name="name">
   </div>
 
-  <button type="submit" class="f6 no-underline grow dib v-mid  ba b-- ph4 pv3 mb3">ADD BURGER</button>
+  <button type="submit" class="f6 no-underline grow dib v-mid  ba b-- ph4 pv3 mb3" id="add-burger">ADD BURGER</button>
 </form>

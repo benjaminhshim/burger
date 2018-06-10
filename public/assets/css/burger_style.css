@@ -12,7 +12,7 @@ img {
 
 input {
     width: 500px;
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
     height: 40px;
 }
@@ -23,7 +23,7 @@ input:focus {
     color: gray;
 }
 
-button {
+#add-burger {
     background-color: rgb(122, 213, 255);
     color: white;
     border: none;
@@ -32,4 +32,40 @@ button {
 
 #burger-title {
     letter-spacing: 4px;
+}
+
+.menu {
+    clear: both;
+    overflow: auto;
+}
+
+#ready {
+    float: left;
+    background-color: rgb(255, 223, 223);
+    padding: 5px 20px 10px 20px;
+}
+
+#devoured {
+    float: right;
+    background-color: rgb(254, 255, 223);
+    padding: 5px 20px 10px 20px;
+}
+
+h4 {
+    letter-spacing: 3px;
+    color: gray;
+    background: white;
+    padding: 10px;
+}
+
+.devour-btn {
+    background-color: rgb(223, 160, 160);
+    color: white;
+    border: none;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+.uneaten-burger {
+    margin: 15px;
 }
